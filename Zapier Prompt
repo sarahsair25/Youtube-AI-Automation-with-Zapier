@@ -1,0 +1,7 @@
+{
+  "video_title": "LangChain RAG: From Zero to Production in 10 Minutes",
+  "topic_theme": "Building production RAG systems with LangChain",
+  "video_description": "Learn how to build production-ready RAG pipelines...",
+  "tags": ["LangChain", "RAG", "LLM", "Python", "AI Tutorial"],
+  "thumbnail_prompt": "A developer standing in front of flowing data streams..."
+}
