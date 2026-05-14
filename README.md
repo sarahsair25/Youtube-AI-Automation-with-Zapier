@@ -26,18 +26,21 @@ This system automates your entire YouTube content workflow using:
 | 📊 **Analytics** | Performance tracking and optimization |
 
 ## 🏗️ Architecture
+
 ┌─────────────────────────────────────────────────────────────────┐
-│ WEEKLY AUTOMATION FLOW │
+│                     WEEKLY AUTOMATION FLOW                      │
 ├─────────────────────────────────────────────────────────────────┤
-│ │
-│ Zapier Schedule ──► GPT-4o ──► Script ──┬──► Python Uploader │
-│ (Every Monday) Generates Save │ │
-│ │ ├──► Thumbnail Gen │
-│ │ │ │
-│ ▼ └──► YouTube API │
-│ Google Docs │
-│ (Backup) │
+│                                                                 │
+│ Zapier Schedule ──► GPT-4o ──► Script ──┬──► Python Uploader    │
+│ (Every Monday)      Generates   Save    │                       │
+│                                         ├──► Thumbnail Gen      │
+│          │                              │                       │
+│          ▼                              └──► YouTube API        │
+│     Google Docs                                                 │
+│      (Backup)                                                   │
 └─────────────────────────────────────────────────────────────────┘
+
+┌
 
 text
 
