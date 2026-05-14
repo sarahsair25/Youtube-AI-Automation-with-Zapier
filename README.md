@@ -14,35 +14,30 @@ This system automates your entire YouTube content workflow using:
 - **GPT-4o** for scripts, titles, descriptions, and thumbnails
 - **Python** for advanced automation and YouTube API integration
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 **AI Script Generation** | Full video scripts with hooks, intros, and conclusions |
-| 🎨 **Thumbnail Creation** | DALL-E 3 generated thumbnails with text overlay |
-| 📝 **SEO Optimization** | Keywords, tags, and descriptions auto-generated |
-| ⏰ **Weekly Scheduling** | Automated weekly content calendar |
-| 📤 **YouTube Upload** | Direct API upload with metadata |
-| 📊 **Analytics** | Performance tracking and optimization |
+|  **AI Script Generation** | Full video scripts with hooks, intros, and conclusions |
+|  **Thumbnail Creation** | DALL-E 3 generated thumbnails with text overlay |
+|  **SEO Optimization** | Keywords, tags, and descriptions auto-generated |
+|  **Weekly Scheduling** | Automated weekly content calendar |
+|  **YouTube Upload** | Direct API upload with metadata |
+| **Analytics** | Performance tracking and optimization |
 
-## 🏗️ Architecture
+## Architecture
 
-┌─────────────────────────────────────────────────────────────────┐
-│                     WEEKLY AUTOMATION FLOW                      │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│ Zapier Schedule ──► GPT-4o ──► Script ──┬──► Python Uploader    │
-│ (Every Monday)      Generates   Save    │                       │
-│                                         ├──► Thumbnail Gen      │
-│          │                              │                       │
-│          ▼                              └──► YouTube API        │
-│     Google Docs                                                 │
-│      (Backup)                                                   │
-└─────────────────────────────────────────────────────────────────┘
+graph LR
+    Zapier[Zapier Schedule<br/>Every Monday] --> GPT[GPT-4o<br/>Generates]
+    GPT --> Script[Script<br/>Save]
+    Script --> Uploader[Python Uploader]
+    Script --> Thumb[Thumbnail Gen]
+    Script --> YT[YouTube API]
+    Zapier --> Docs[Google Docs<br/>Backup]
 
-┌
 
-text
+
+
 
 ## 📋 Prerequisites
 
