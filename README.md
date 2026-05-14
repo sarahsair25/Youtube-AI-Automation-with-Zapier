@@ -26,16 +26,18 @@ This system automates your entire YouTube content workflow using:
 | **Analytics** | Performance tracking and optimization |
 
 ## Architecture
-
-graph LR
-    Zapier[Zapier Schedule<br/>Every Monday] --> GPT[GPT-4o<br/>Generates]
-    GPT --> Script[Script<br/>Save]
-    Script --> Uploader[Python Uploader]
-    Script --> Thumb[Thumbnail Gen]
-    Script --> YT[YouTube API]
-    Zapier --> Docs[Google Docs<br/>Backup]
-
-
+┌─────────────────────────────────────────────────────────────────┐
+│                     WEEKLY AUTOMATION FLOW                      │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│ Zapier Schedule ──► GPT-4o ──► Script ──┬──► Python Uploader    │
+│ (Every Monday)      Generates   Save    │                       │
+│                                         ├──► Thumbnail Gen      │
+│          │                              │                       │
+│          ▼                              └──► YouTube API        │
+│     Google Docs                                                 │
+│      (Backup)                                                   │
+└─────────────────────────────────────────────────────────────────┘
 
 
 
