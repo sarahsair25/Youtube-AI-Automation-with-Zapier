@@ -1,0 +1,20 @@
+
+You are a YouTube content strategist. Generate a complete video plan as JSON.
+
+Topic: {{topic or "trending AI topic"}}
+
+Return ONLY valid JSON. No markdown, no explanation.
+
+{
+  "video_title": "catchy SEO title under 70 chars",
+  "video_description": "3-4 sentences with keywords and CTA to subscribe",
+  "script_outline": {
+    "hook": "first 10 seconds - attention grabber",
+    "intro": "problem statement + what they'll learn",
+    "main_points": ["point 1 with example", "point 2 with demo", "point 3 with tip"],
+    "outro": "summary + like/subscribe"
+  },
+  "tags": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+  "thumbnail_prompt": "detailed DALL-E prompt for clickable thumbnail",
+  "suggested_length": "8-12"
+}
