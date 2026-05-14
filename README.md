@@ -117,25 +117,6 @@ Create document with generated script
 Step 4: Webhook (to Python backend)
 Send data to your Python server
 
-📁 Project Structure
-text
-youtube-ai-automation/
-├── src/
-│   ├── content_generator.py   # GPT-4o script generation
-│   ├── thumbnail_generator.py # DALL-E thumbnails
-│   ├── youtube_uploader.py    # YouTube API upload
-│   └── scheduler.py           # Weekly scheduling
-├── config/
-│   ├── config.yaml            # App configuration
-│   └── zapier_prompt.txt      # Zapier prompt template
-├── outputs/
-│   ├── scripts/               # Generated scripts
-│   ├── thumbnails/            # Generated thumbnails
-│   └── videos/                # Video files (manual/recorded)
-├── main.py                    # Entry point
-├── requirements.txt
-├── .env.example
-└── README.md
 
 ### Example Output
 Generated Script Snippet
