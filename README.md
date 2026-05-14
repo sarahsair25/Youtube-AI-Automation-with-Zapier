@@ -136,7 +136,8 @@ youtube-ai-automation/
 ├── requirements.txt
 ├── .env.example
 └── README.md
-🎯 Example Output
+
+### Example Output
 Generated Script Snippet
 markdown
 # HOOK (0-30 seconds)
@@ -151,6 +152,7 @@ markdown
 3. Adding memory and tools
 4. Production best practices
 Sample Prompt from Zapier
+
 json
 {
   "video_title": "LangChain RAG: From Zero to Production in 10 Minutes",
